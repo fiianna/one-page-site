@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+html {
+  font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  background-color: #333333;
+}
+
+/* Navigointipalkin säännöt */
+.navigointi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* Vanhemman säännöt */
+  
+
+  .navigointi ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: 0;
+    background-color:black;
+    top: 0;
+    padding: 1rem;
+  }
+  
+  /* Lapsien säännöt*/
+.navigointi ul li {
+      flex-grow: 1;
+      flex-basis: 0;
+      text-align: center;
+      font-size: 2rem;
+}
+
+.navigointi ul .tupla {
+      flex-grow: 2;
+      text-align: left;
+}
+
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .active {
+    background-color: black;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 0;
+  }
+
+  #portfolio {
+    background-image: url("https://source.unsplash.com/1600x900/?city,night");
+    padding: 2rem;
+    margin: 2rem;
+    margin-top: 8rem;
+}
+
+#portfolio .tausta {
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin: 2rem;
+    padding: 2rem;
+
+}
+
+  #menneisyys {
+      background-color: white;
+      color: black;
+      padding: 1rem;
+      margin: 3rem;
+      font-weight: 400;
+  }
+
+  #menneisyys > * {
+   padding: 0.5rem;
+   font-size: 2rem;
+   font-weight: 600;
+  }
+
+  #nykyisyys {
+    background-color: #333333;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  #tulevaisuus {
+    background-color: #333333;
+    color:white;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #yhteystiedot {
+    background-color: #333333;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  footer {
+    color: white;
+    padding: 0.5rem;
+  }
+
+  hr {
+
+  }
+
+  h1 {
+      font-size: 2rem;
+      padding: 1rem;
+      color: orange;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: white;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      flex-basis: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+
+  #otsikko1 {
+    color: black;
+  }
+
+  #otsikko2 {
+    color: black;
+  }
+
+  #otsikko3 {
+    color: black;
+  }
+
+  .form-example label {
+    display: inline-block;
+    width: 10rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .form-example input {
+    display: inline-block;
+    width: 50rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-example .button {
+    width: 10rem;
+    padding: 1rem;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  /* Menneisyyden card -rakenne */
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .container > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .card-title {
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+
+  figure img {
+    max-width: 100%;
+  }
+  .left {
+    float: right;
+  }
+
+  .right {
+float: left;
+margin-right: 1rem;
+  }
+
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  /* Tabletti */
+  @media screen and (min-width: 426px) {
+    body {
+    }
+    .container > * {
+      flex-basis: 0;
+    }
+  }
+
+
+  /* Läppäri */
+  @media screen and (min-width: 769px) {
+    body {
+    }
+  }
